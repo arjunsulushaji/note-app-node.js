@@ -8,7 +8,11 @@ exports.homepage = async (req, res) => {
         title: 'Node.js Notes',
         description: 'Free Nodejs Notes App'
     }
-    res.render('index', { locals });
+    res.render('index',
+        {
+            locals,
+            layout:'../views/layouts/front-page'
+        });
 }
 
 /**
