@@ -19,7 +19,7 @@ app.use(session({
         mongoUrl: process.env.MONGODB_URI,
         ttl: 60 * 60
     }),
-    cookie: { maxAge: new Date(Date.now() + (360000)) }
+    // cookie: { maxAge: new Date(Date.now() + (360000)) }
 }));
 
 app.use(passport.initialize())
